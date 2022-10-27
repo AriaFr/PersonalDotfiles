@@ -1,0 +1,66 @@
+/*******************************************************
+ * ROFI Arch Dark Transparent colors for EndeavourOS
+ * Maintainer: joekamprad <joekamprad@endeavouros.com>
+ *******************************************************/
+* {
+    selected-normal-foreground:  rgba ( 255, 147, 5, 100 % );
+    foreground:                  rgba ( 147, 153, 166, 100 % );
+    normal-foreground:           @foreground;
+    alternate-normal-background: rgba ( 45, 48, 59, 1 % );
+    red:                         rgba ( 220, 50, 47, 100 % );
+    selected-urgent-foreground:  rgba ( 249, 249, 249, 100 % );
+
+    urgent-foreground:           rgba ( 204, 102, 102, 100 % );
+    alternate-urgent-background: rgba ( 75, 81, 96, 90 % );
+    active-foreground:           rgba ( 101, 172, 255, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    selected-active-foreground:  rgba ( 249, 249, 249, 100 % );
+    alternate-active-background: rgba ( 45, 48, 59, 88 % );
+    background:                  rgba ( 0, 0, 0, 100 % );
+    alternate-normal-foreground: @foreground;
+    normal-background:           rgba ( 45, 48, 59, 1 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    selected-normal-background:  rgba ( 24, 26, 32, 100 % );
+    border-color:                rgba ( 124, 131, 137, 100 % );
+    spacing:                     2;
+    separatorcolor:              rgba ( 45, 48, 59, 1 % );
+    urgent-background:           rgba ( 45, 48, 59, 15 % );
+    selected-urgent-background:  rgba ( 165, 66, 66, 100 % );
+    alternate-urgent-foreground: @urgent-foreground;
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    alternate-active-foreground: @active-foreground;
+    active-background:           rgba ( 29, 31, 33, 17 % );
+    selected-active-background:  rgba ( 26, 28, 35, 100 % );
+
+ base:   #1e1e2e;
+ mantle:    #181825;
+ crust:    #11111b;
+
+ text:    #cdd6f4;
+ subtext0:    #a6adc8;
+ subtext1:    #bac2de;
+
+ surface0:    #313244;
+ surface1:    #45475a;
+ surface2:    #585b70;
+ 
+ overlay0:    #6c7086;
+ overlay1:    #7f849c;
+ overlay2:    #9399b2;
+ 
+
+ blue:    #89b4fa;
+ lavender:    #b4befe;
+ sapphire:    #74c7ec;
+ sky:    #89dceb;
+ teal:    #94e2d5;
+ green:    #a6e3a1;
+ yellow:    #f9e2af;
+ peach:    #fab387;
+ maroon:    #eba0ac;
+ red:    #f38ba8;
+ mauve:    #cba6f7;
+ pink:    #f5c2e7;
+ flamingo:    #f2cdcd;
+ rosewater:    #f5e0dc;
+}

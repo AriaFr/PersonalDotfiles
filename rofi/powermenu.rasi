@@ -1,0 +1,122 @@
+/*******************************************************
+ * ROFI configs i3 powermenu for EndeavourOS
+ * Maintainer: joekamprad <joekamprad@endeavouros.com>
+ *******************************************************/
+configuration {
+    font:            "Noto Sans Regular 20";
+    show-icons:      false;
+    icon-theme:      "Oranchelo";
+    scroll-method:   0;
+    disable-history: true;
+    sidebar-mode:    false;
+    drun-display-format:      "{icon}";
+    click-to-exit: 		            true;
+}
+
+@import "~/.config/rofi/arc_dark_transparent_colors.rasi"
+
+window {
+    background-color: @mantle;
+    border:           0;
+    padding:          60;
+    transparency:     "real";
+    width:            400px;
+    location:         4;
+    /*y-offset:       18;*/
+    /*x-offset:       850;*/
+}
+listview {
+    lines:     3;
+    columns:   2;
+    scrollbar: false;
+}
+element {
+    border:  0;
+    padding: 5px;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element.normal.normal {
+    background-color: @mantle;
+    text-color:       @text;
+}
+element.normal.urgent {
+    background-color: @mantle;
+    text-color:       @text;
+}
+element.normal.active {
+    background-color: @mantle;
+    text-color:       @pink;
+}
+element.selected.normal {
+    background-color: @mantle;
+    text-color:       @pink;
+}
+element.selected.urgent {
+    background-color: @mantle;
+    text-color:       @selected-urgent-foreground;
+}
+element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @pink;
+}
+element.alternate.normal {
+    background-color: @mantle;
+    text-color:       @text;
+}
+element.alternate.urgent {
+    background-color: @mantle;
+    text-color:       @peach;
+}
+element.alternate.active {
+    background-color: @mantle;
+    text-color:       @peach;
+}
+scrollbar {
+    width:        2px;
+    border:       0;
+    handle-color: @normal-foreground;
+    handle-width: 8px;
+    padding:      0;
+}
+mode-switcher {
+    border:       2px 0px 0px;
+    border-color: @lavender;
+}
+button {
+    spacing:    5;
+    text-color: @normal-foreground;
+}
+button.selected {
+    background-color: @base;
+    text-color:       @blue;
+}
+inputbar {
+    spacing:    0;
+    text-color: @lavender;
+    padding:    1px;
+}
+case-indicator {
+    spacing:    0;
+    text-color: @text;
+}
+entry {
+    spacing:    0;
+    text-color: @rosewater;
+}
+prompt {
+    spacing:    0;
+    text-color: @text;
+}
+inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+textbox-prompt-colon {
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em;
+    text-color: @normal-foreground;
+}
+
